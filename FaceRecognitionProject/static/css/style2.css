@@ -1,0 +1,77 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    color: #1877f2;
+    margin: 50px 20px 10px 20px;
+    font-size: 50px;
+}
+
+.login-container {
+    text-align: center;
+    margin: auto;
+    box-shadow: 1px 1px 6px 6px rgb(237, 242, 246);
+    background-color: white;
+    height: 440px;
+    width: 400px;
+    border-radius: 2%;
+}
+
+.login-container p {
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    height: 50px;
+    border-radius: 4px;
+    border: 2px solid rgb(230, 230, 230);
+    font-size: 17px;
+    padding-left: 17px;
+    color: rgb(164, 162, 162);
+}
+
+.login-container input[type="submit"] {
+    width: 95%;
+    height: 55px;
+    border-radius: 6px;
+    font-size: 17px;
+    padding-left: 17px;
+    color: white;
+    background-color: #1877f2;
+    border: none;
+    font-weight: bold;
+}
+
+.forgot-button {
+    color: #1877f2;
+    background-color: white;
+    border: none;
+}
+
+.separator {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    align-items: center;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.create-button {
+    color: white;
+    background-color: #42b72a;
+    height: 55px;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 17px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style4.css">
+    <script src="/static/js/script3.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <p>Payment Methods:</p>
+            <hr>
+            <div class="methods">
+                <div id="tColorA">
+                    <i class="fa-solid fa-credit-card" style="color: greenyellow;"></i> Payment by card
+                </div>
+                <div id="tColorB">
+                    <i class="fa-solid fa-building-columns" style="color: greenyellow;"></i> Payment by bank
+                </div>
+                <div id="tColorC">
+                    <i class="fa-solid fa-wallet" style="color: greenyellow;"></i> Apple/Google pay
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="center">
+            <img src="/static/images/icon.jpg" alt="Payment Logo" style="height: 50px; width: 250px; display: block; margin: 0 auto;">
+            <hr>
+            <div class="card-details">
+                <form>
+                    <p>Card number</p>
+                    <div class="c-number">
+                        <input id="number" placeholder="Card number" maxlength="25" name="card" required>
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <div class="c-details">
+                        <p>Expiry date</p>
+                        <input id="e-data" placeholder="MM/YY" maxlength="5" name="date" required>
+                    </div>
+                    <div>
+                        <p>CVV</p>
+                        <div class="cvv-box">
+                            <input id="cvv" placeholder="CVV" maxlength="3" name="cvv" required>
+                            <i class="fa-solid fa-circle-question" title="3 digits on the back of the card"></i>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                    </div>
+                    <button type="submit">PAY NOW</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right">
+            <p style="font-weight: bold;">Order Information</p>
+            <hr>
+            <div class="details">
+                <div style="font-weight: bold; padding: 5px 0;">Order description</div>
+                <div style="padding: 5px 0;">Test Payment</div>
+                <hr>
+            </div>
+            <img src="/static/images/icon.jpg" alt="Order Image" style="height: 50px; width: 250px; display: block; margin: 0 auto;">
+        </div>
+    </div>
+
+</body>
+
+</html>
